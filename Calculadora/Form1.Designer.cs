@@ -47,6 +47,8 @@
             this.btnResultado = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnexponente = new System.Windows.Forms.Button();
+            this.btnraiz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtScreen
@@ -59,7 +61,7 @@
             this.txtScreen.Multiline = true;
             this.txtScreen.Name = "txtScreen";
             this.txtScreen.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtScreen.Size = new System.Drawing.Size(223, 37);
+            this.txtScreen.Size = new System.Drawing.Size(272, 37);
             this.txtScreen.TabIndex = 0;
             this.txtScreen.Text = "0";
             this.txtScreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -69,7 +71,7 @@
             this.btnSumar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSumar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSumar.Location = new System.Drawing.Point(12, 79);
+            this.btnSumar.Location = new System.Drawing.Point(187, 197);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(48, 47);
             this.btnSumar.TabIndex = 1;
@@ -82,7 +84,7 @@
             this.btnRestar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRestar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestar.Location = new System.Drawing.Point(66, 79);
+            this.btnRestar.Location = new System.Drawing.Point(241, 197);
             this.btnRestar.Name = "btnRestar";
             this.btnRestar.Size = new System.Drawing.Size(48, 47);
             this.btnRestar.TabIndex = 2;
@@ -95,7 +97,7 @@
             this.btnMultiplicar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnMultiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(120, 79);
+            this.btnMultiplicar.Location = new System.Drawing.Point(241, 250);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(48, 47);
             this.btnMultiplicar.TabIndex = 3;
@@ -108,7 +110,7 @@
             this.btnDividir.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnDividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(187, 79);
+            this.btnDividir.Location = new System.Drawing.Point(187, 250);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(48, 47);
             this.btnDividir.TabIndex = 4;
@@ -264,9 +266,9 @@
             this.btnResultado.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.Location = new System.Drawing.Point(187, 250);
+            this.btnResultado.Location = new System.Drawing.Point(187, 303);
             this.btnResultado.Name = "btnResultado";
-            this.btnResultado.Size = new System.Drawing.Size(48, 100);
+            this.btnResultado.Size = new System.Drawing.Size(97, 47);
             this.btnResultado.TabIndex = 19;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = false;
@@ -277,7 +279,7 @@
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(187, 197);
+            this.btnLimpiar.Location = new System.Drawing.Point(12, 79);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(48, 47);
             this.btnLimpiar.TabIndex = 18;
@@ -290,7 +292,7 @@
             this.btnBorrar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(187, 144);
+            this.btnBorrar.Location = new System.Drawing.Point(66, 79);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(48, 47);
             this.btnBorrar.TabIndex = 17;
@@ -298,12 +300,40 @@
             this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
+            // btnexponente
+            // 
+            this.btnexponente.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnexponente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexponente.Location = new System.Drawing.Point(241, 144);
+            this.btnexponente.Name = "btnexponente";
+            this.btnexponente.Size = new System.Drawing.Size(48, 47);
+            this.btnexponente.TabIndex = 21;
+            this.btnexponente.Text = " ^";
+            this.btnexponente.UseVisualStyleBackColor = false;
+            this.btnexponente.Click += new System.EventHandler(this.btnexponente_Click);
+            // 
+            // btnraiz
+            // 
+            this.btnraiz.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnraiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnraiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnraiz.Location = new System.Drawing.Point(187, 144);
+            this.btnraiz.Name = "btnraiz";
+            this.btnraiz.Size = new System.Drawing.Size(48, 47);
+            this.btnraiz.TabIndex = 20;
+            this.btnraiz.Text = "√";
+            this.btnraiz.UseVisualStyleBackColor = false;
+            this.btnraiz.Click += new System.EventHandler(this.btnraiz_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(247, 365);
+            this.ClientSize = new System.Drawing.Size(295, 365);
+            this.Controls.Add(this.btnexponente);
+            this.Controls.Add(this.btnraiz);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnBorrar);
@@ -354,6 +384,8 @@
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Button btnexponente;
+        private System.Windows.Forms.Button btnraiz;
     }
 }
 

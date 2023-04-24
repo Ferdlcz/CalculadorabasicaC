@@ -130,9 +130,26 @@ namespace Calculadora
             txtScreen.Text = num1.ToString() + "/";
         }
 
+        private void btnexponente_Click(object sender, EventArgs e)
+        {
+            operador = "exponente";
+            num1 = Convert.ToDouble(txtScreen.Text);
+            txtScreen.Text = num1.ToString() + "^";
+        }
+
+        private void btnraiz_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToDouble(txtScreen.Text) >= 0)
+            {
+                operador = "raiz";
+                num1 = Convert.ToDouble(txtScreen.Text);
+                txtScreen.Text = "√" + num1.ToString() ;
+            }
+        }
+
         private void btnResultado_Click(object sender, EventArgs e)
         {
-            string[] parts = txtScreen.Text.Split(new char[] { '+', '-', '*', '/' }, 2);
+            string[] parts = txtScreen.Text.Split(new char[] { '+', '-', '*', '/', '^', '√' }, 2);
             if (parts.Length != 2) return;
 
             num1 = Convert.ToDouble(parts[0]);
@@ -150,11 +167,31 @@ namespace Calculadora
                 {
                     txtScreen.Text = (num1 * num2).ToString();
                 }
-                else
+                else if (operador == "/")
                 {
                     txtScreen.Text = (num1 / num2).ToString();
                 }
+                else if (operador == "exponente")
+                {
+                    txtScreen.Text = Math.Pow(num1, num2).ToString();
+                }
+                else if (operador == "raiz")
+                {
+                    if (num1 >= 0)
+                    {
+                     double resultado = Math.Sqrt(num2);
+                     txtScreen.Text = resultado.ToString();
+                    }
+                    else
+                    {
+                     MessageBox.Show("No se puede calcular la raíz cuadrada de un número negativo");
+                    }
+                 }
+                else
+                {
+                    MessageBox.Show("Operador inválido");
+                }
             }
-        }
+    }
 
 }
