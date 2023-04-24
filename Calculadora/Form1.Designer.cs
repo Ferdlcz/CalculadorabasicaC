@@ -268,7 +268,7 @@
             this.btnResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResultado.Location = new System.Drawing.Point(187, 303);
             this.btnResultado.Name = "btnResultado";
-            this.btnResultado.Size = new System.Drawing.Size(97, 47);
+            this.btnResultado.Size = new System.Drawing.Size(102, 47);
             this.btnResultado.TabIndex = 19;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = false;
@@ -279,7 +279,7 @@
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(12, 79);
+            this.btnLimpiar.Location = new System.Drawing.Point(187, 79);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(48, 47);
             this.btnLimpiar.TabIndex = 18;
@@ -292,7 +292,7 @@
             this.btnBorrar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(66, 79);
+            this.btnBorrar.Location = new System.Drawing.Point(241, 79);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(48, 47);
             this.btnBorrar.TabIndex = 17;
