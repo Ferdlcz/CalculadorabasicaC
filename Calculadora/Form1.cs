@@ -99,7 +99,7 @@ namespace Calculadora
 
         private void btnPunto_Click(object sender, EventArgs e)
         {
-            txtScreen.Text = txtScreen.Text + ",";
+            txtScreen.Text = txtScreen.Text + ".";
         }
 
         private void btnSumar_Click(object sender, EventArgs e)
